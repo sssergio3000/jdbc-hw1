@@ -1,0 +1,8 @@
+drop table if exists testtable
+create table testtable (id int not null primary key, name varchar(20) not null, age tinyint not null)
+insert into testtable (id, name, age) values (1, 'serg', 25), (2, 'john', 30), (3, 'lord', 22)
+select * from testtable
+update testtable set age = age+40 where id = 2
+select * from testtable
+delete from testtable where id >2
+select * from testtable
